@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.isIntegerArray;
+})();
 })();
 </script>
 ```
@@ -132,6 +134,7 @@ bool = isIntegerArray.objects( [ -3.0, new Number(1.0) ] );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer-array@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var bool = isIntegerArray( [ -5, 0, 2, 5 ] );
 // returns true
@@ -151,6 +154,7 @@ bool = isIntegerArray( [ -2.3, 0, 3 ] );
 bool = isIntegerArray( [] );
 // returns false
 
+})();
 })();
 </script>
 </body>
@@ -246,7 +250,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/umd
+[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
