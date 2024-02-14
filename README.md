@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer-array@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-integer-array/tags). For example,
+
+```javascript
 import isIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer-array@v0.2.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer-array@v0.2.0-deno/mod.js';
+import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer-array@deno/mod.js';
 ```
 
 #### isIntegerArray( value )
@@ -119,7 +124,7 @@ bool = isIntegerArray.objects( [ -3.0, new Number(1.0) ] );
 
 ```javascript
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
-import isIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer-array@v0.2.0-deno/mod.js';
+import isIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer-array@deno/mod.js';
 
 var bool = isIntegerArray( [ -5, 0, 2, 5 ] );
 // returns true
