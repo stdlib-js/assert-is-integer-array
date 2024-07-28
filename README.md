@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer-array@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-integer-array/tags). For example,
+
+```javascript
 import isIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer-array@v0.2.2-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer-array@v0.2.2-esm/index.mjs';
+import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer-array@esm/index.mjs';
 ```
 
 #### isIntegerArray( value )
@@ -124,7 +129,7 @@ bool = isIntegerArray.objects( [ -3.0, new Number(1.0) ] );
 <script type="module">
 
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
-import isIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer-array@v0.2.2-esm/index.mjs';
+import isIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer-array@esm/index.mjs';
 
 var bool = isIntegerArray( [ -5, 0, 2, 5 ] );
 // returns true
